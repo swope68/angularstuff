@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<!--ng-app="madLibs"-->
+<head>
+    <title>Madlibs</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-init="female_name ='Female Name'; job_title = 'Job Title'; tedious_task = 'Tedious Task'; dirty_task = 'Dirty Task';
+    celebrity = 'Celebrity'; useless_skill = 'Useless Skill'; adjective = 'Adjective'; obnoxious_celebrity = 'Obnoxious Celebrity';
+    huge_number = 'Huge Number';">
+<div class="container" >
+    <div class="left">
+        <img src="images/mad-lib-happy-face.png" style="height: 160px; width: 160px;">
+    </div>
+    <div class="right">
+        <img src="images/ng-mad-libs-logo.png">
+
+        <h1>Automate This!!!</h1>
+    </div>
+</div>
+<div class="input-holder">
+    <p style="font-size: 24px; margin-left: 30px;">
+        Provide the following words:
+    </p>
+    <section class="inputs">
+        <input type="text" ng-model="female_name" placeholder="female_name"/>
+        <input type="text" ng-model="job_title" placeholder="job_title"/>
+        <input type="text" ng-model="tedious_task" placeholder="tedious_task"/>
+    </section>
+    <section class="inputs">
+        <input type="text" ng-model="dirty_task" placeholder="dirty_task"/>
+        <input type="text" ng-model="celebrity" placeholder="Celebrity"/>
+        <input type="text" ng-model="useless_skill" placeholder="useless_skill"/>
+    </section>
+    <section class="inputs">
+        <input type="text" ng-model="obnoxious_celebrity" placeholder="obnoxious_celebrity"/>
+        <input type="text" ng-model="huge_number" placeholder="huge_number"/>
+        <input type="text" ng-model="adjective" placeholder="adjective"/>
+    </section>
+</div>
+<div class="story-holder">
+    <p>
+        <strong>{{female_name}}</strong> was a <strong>{{job_title}}</strong> who loved technology. Although she loved parts of her job, she absolutely hated
+        <strong>{{tedious_task}}</strong> and <strong>{{dirty_task}}</strong>. So, <strong>{{female_name}}</strong> met with her life mentor <strong>{{celebrity}}</strong>
+        who told her to learn <strong>{{useless_skill}}</strong> with Thinkful. Thinkful didn't offer a course on <strong>{{useless_skill}}</strong>
+        so she studied programming instead.
+    </p>
+    <p>
+        What a great decision! With her new skills, <strong>{{female_name}}</strong> built a(n) <strong>{{adjective}}</strong> robot named
+        <strong>{{obnoxious_celebrity}}</strong> that not only loved <strong>{{dirty_task}}</strong> but did it <strong>{{huge_number}}</strong> minutes faster.
+    </p>
+
+</div>
+
+</body>
+</html>
